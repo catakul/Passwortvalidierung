@@ -8,8 +8,8 @@ public class PasswordValidatorTest {
     @Test
     public void testGetLengthOfPassword()
     {
-        int expected = 5;
-        int actual = PasswordValidator.getLengthOfPassword("Hello");
+        boolean expected = true;
+        boolean actual = PasswordValidator.isPasswordLongEnough("Hello03jewrewrewer");
         assertEquals(expected,actual);
     };
 

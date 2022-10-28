@@ -8,14 +8,22 @@ oder copy paste regex?
 
 public class PasswordValidator {
     public static void main(String[] args) {
-        System.out.println("Passwortvalidierung");
-    }
 
-    public static int getLengthOfPassword(String s) {
-    return 0;
+
+    String password = "lis547uitzutzutut";
+        boolean val = isPasswordLongEnough(password);
+        System.out.println(val);
+    }
+    public static boolean isPasswordLongEnough(String password) {
+        if(password.length()>10){
+
+            return true;
+        };
+        return false;
     }
 
     public static boolean isStringWithLetters(String s) {
-        return false;
+
+        return true;
     }
 }
